@@ -5,8 +5,9 @@ namespace Fibonacci
     class Program
     {
         /// <summary>
-        /// Asks the user for a number and prints the number in that position 
-        /// on the fibonacci sequence
+        /// Uses arguments from the comand line as arguments for the fibonacci 
+        /// method , else asks the user for a number and prints the number in 
+        /// that position on the fibonacci sequence
         /// </summary>
         /// <param name="args"></param>
         static void Main(string[] args)
@@ -15,9 +16,15 @@ namespace Fibonacci
             int num;
             string input;
 
-            //Asks user for a number
-            Console.Write("Write a int:");
-            input = Console.ReadLine();
+            //try to use args for input
+            if(args.Length>=1)
+                input = args[0];
+            else
+            {
+                //Asks user for a number
+                Console.Write("Write a int:");
+                input = Console.ReadLine();
+            }
 
             //Convert input to int
             num = int.Parse(input);
