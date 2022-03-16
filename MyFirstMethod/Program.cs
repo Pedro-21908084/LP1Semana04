@@ -8,6 +8,8 @@ namespace MyFirstMethod
         {
             CountTo10();
             CountTo10();
+            CountToN(3);
+            CountToN(12);
         }
 
         private static void CountTo10()
