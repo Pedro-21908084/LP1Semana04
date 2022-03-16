@@ -6,16 +6,16 @@ namespace MyFirstMethod
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            CountTo10();
+            CountTo10();
         }
-    }
 
-    private static void CountTo10()
-    {
-        for (int i = 1; i <= 10; i++)
+        private static void CountTo10()
         {
-            Console.WriteLine(i);
+            for (int i = 1; i <= 10; i++)
+            {
+                Console.WriteLine(i);
+            }
         }
     }
-
 }
