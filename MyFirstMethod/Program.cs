@@ -2,8 +2,16 @@
 
 namespace MyFirstMethod
 {
+    /// <summary>
+    /// Program made to test the use of methods
+    /// </summary>
     class Program
     {
+        /// <summary>
+        /// Calls function CountTo10 2 times and function CountToN 2 times with
+        /// the arguments 3 and 12
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
             CountTo10();
