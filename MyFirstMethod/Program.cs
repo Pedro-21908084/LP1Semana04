@@ -8,8 +8,8 @@ namespace MyFirstMethod
     class Program
     {
         /// <summary>
-        /// Calls function CountTo10 2 times and function CountToN 2 times with
-        /// the arguments 3 and 12
+        /// Calls function CountTo10 2 times, calls function CountToN 3 times 
+        /// with the arguments 3 and 12 and then with both 2 and 7 as arguments
         /// </summary>
         /// <param name="args"></param>
         static void Main(string[] args)
@@ -18,6 +18,7 @@ namespace MyFirstMethod
             CountTo10();
             CountToN(3);
             CountToN(12);
+            CountToN(2, 7);
         }
 
         /// <summary>
