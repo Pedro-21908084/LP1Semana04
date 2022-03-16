@@ -12,12 +12,19 @@ namespace Fibonacci
         static void Main(string[] args)
         {
             //Variables
-            int num = 4;
+            int num;
+            string input;
 
             //Asks user for a number
+            Console.Write("Write a int:");
+            input = Console.ReadLine();
+
+            //Convert input to int
+            num = int.Parse(input);
 
             //calls the fibonacci function with the user number
-            Console.WriteLine(Fibonacci(num));
+            Console.WriteLine($"Fibonacci number in the {num}º position: " + 
+                Fibonacci(num));
 
         }
 
