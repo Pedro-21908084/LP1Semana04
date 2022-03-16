@@ -41,6 +41,11 @@ namespace MyFirstMethod
             }
         }
 
+        /// <summary>
+        /// Prints from n1 to n2
+        /// </summary>
+        /// <param name="n1">The first number the method prints</param>
+        /// <param name="n2">The last number the method prints</param>
         private static void CountToN(int n1, int n2)
         {
             for (int i = n1; i <= n2; i++)
