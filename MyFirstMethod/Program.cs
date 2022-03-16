@@ -17,5 +17,13 @@ namespace MyFirstMethod
                 Console.WriteLine(i);
             }
         }
+
+        private static void CountToN(int n)
+        {
+            for (int i = 1; i <= n; i++)
+            {
+                Console.WriteLine(i);
+            }
+        }
     }
 }
